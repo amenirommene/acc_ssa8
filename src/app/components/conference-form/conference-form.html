@@ -1,0 +1,22 @@
+<form [formGroup]="myForm">
+    Titre : <input formControlName="title">
+    @if(myForm.get('title')?.errors?.['required'] && myForm.get('title')?.touched) {
+    <div>
+        Titre obligatoire
+    </div>
+}
+ @if(myForm.get('title')?.errors?.['minlength'] && myForm.get('title')?.touched) {
+    <div>
+        Titre doit faire au moins {{ myForm.get('title')?.errors?.['minlength'].requiredLength }} caractères
+    </div>
+}
+    Description : <input formControlName="description">
+     @if(myForm.get('description')?.invalid && myForm.get('description')?.touched) {
+    <div>
+       Description obligatoire
+    </div>
+}
+    Lieu: <input formControlName="place">
+    Date : <input formControlName="date">
+    Nombre maximal de participants : <input formControlName="nbMax">
+</form>
