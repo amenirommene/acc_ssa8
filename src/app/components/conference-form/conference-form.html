@@ -5,7 +5,7 @@
         Titre obligatoire
     </div>
 }
- @if(myForm.get('title')?.errors?.['minlength'] && myForm.get('title')?.touched) {
+ @if(Title?.errors?.['minlength'] && myForm.get('title')?.touched) {
     <div>
         Titre doit faire au moins {{ myForm.get('title')?.errors?.['minlength'].requiredLength }} caractères
     </div>
@@ -19,4 +19,49 @@
     Lieu: <input formControlName="place">
     Date : <input formControlName="date">
     Nombre maximal de participants : <input formControlName="nbMax">
+<button [disabled]="myForm.invalid" type="submit">Ajouter</button>
 </form>
+<!--
+<form [formGroup]="myForm" class="event-form">
+    <div class="form-group">
+        <label for="title">Titre :</label>
+        <input id="title" formControlName="title" class="form-control" [ngClass]="{'is-invalid': myForm.get('title')?.invalid && myForm.get('title')?.touched}">
+        
+        @if(myForm.get('title')?.errors?.['required'] && myForm.get('title')?.touched) {
+            <div class="error-message">
+                Titre obligatoire
+            </div>
+        }
+        @if(myForm.get('title')?.errors?.['minlength'] && myForm.get('title')?.touched) {
+            <div class="error-message">
+                Titre doit faire au moins {{ myForm.get('title')?.errors?.['minlength'].requiredLength }} caractères
+            </div>
+        }
+    </div>
+
+    <div class="form-group">
+        <label for="description">Description :</label>
+        <input id="description" formControlName="description" class="form-control" [ngClass]="{'is-invalid': myForm.get('description')?.invalid && myForm.get('description')?.touched}">
+        
+        @if(myForm.get('description')?.invalid && myForm.get('description')?.touched) {
+            <div class="error-message">
+                Description obligatoire
+            </div>
+        }
+    </div>
+
+    <div class="form-group">
+        <label for="place">Lieu :</label>
+        <input id="place" formControlName="place" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label for="date">Date :</label>
+        <input id="date" type="date" formControlName="date" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label for="nbMax">Nombre maximal de participants :</label>
+        <input id="nbMax" type="number" formControlName="nbMax" class="form-control">
+    </div>
+</form>-->

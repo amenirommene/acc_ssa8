@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { Component, inject } from '@angular/core';
+import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-conference-form',
@@ -8,6 +8,16 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
   styleUrl: './conference-form.css',
 })
 export class ConferenceForm {
+private fb = inject(FormBuilder);
+myForm2 = this.fb.group({
+  title : ['',[Validators.required, Validators.minLength(10)]],
+    description : ['', Validators.required],
+    date : [],
+    nbMax : [],
+    place : []
+
+})
+
 
   myForm : FormGroup = new FormGroup({
     title : new FormControl('',[Validators.required, Validators.minLength(10)]),
@@ -17,5 +27,7 @@ export class ConferenceForm {
     place : new FormControl()
   })
 
-
+get Title(){
+  return this.myForm.get('title');
+}
 }
