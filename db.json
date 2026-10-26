@@ -1,40 +1,67 @@
-{ "examens":[],
-  "conferences":[
+{
+  "examens": [],
+  "conferences": [
     {
-    "id": 1,
-    "title": "Angular 21 Conference",
-    "description": "Découvrir les nouveautés d’Angular 21.",
-    "date": "2026-11-15",
-    "place": "Tunis",
-    "maxParticipants": 50,
-    "nbParticipants": 25
-  },
-  {
-    "id": 2,
-    "title": "Signals Workshop",
-    "description": "Atelier pratique sur les Signals Angular.",
-    "date": "2026-11-30",
-    "place": "Ariana",
-    "maxParticipants": 20,
-    "nbParticipants": 14
-  },
-  {
-    "id": 3,
-    "title": "Web Conference",
-    "description": "Conférence sur le développement web moderne.",
-    "date": "2026-11-20",
-    "place": "Sousse",
-    "maxParticipants": 30,
-    "nbParticipants": 30
-  },
-  {
-    "id": 4,
-    "title": "Ancienne Conference",
-    "description": "Cette conférence est ancienne et ne doit pas être affichée.",
-    "date": "2026-08-15",
-    "place": "Tunis",
-    "maxParticipants": 40,
-    "nbParticipants": 20
-  }
+      "id": 1,
+      "title": "Angular 21 Conference",
+      "description": "Découvrir les nouveautés d’Angular 21.",
+      "date": "2026-11-15",
+      "place": "Tunis",
+      "maxParticipants": 50,
+      "nbParticipants": 25
+    },
+    {
+      "id": 2,
+      "title": "Signals Workshop",
+      "description": "Atelier pratique sur les Signals Angular.",
+      "date": "2026-11-30",
+      "place": "Ariana",
+      "maxParticipants": 20,
+      "nbParticipants": 14
+    },
+    {
+      "id": 3,
+      "title": "Web Conference",
+      "description": "Conférence sur le développement web moderne.",
+      "date": "2026-11-20",
+      "place": "Sousse",
+      "maxParticipants": 30,
+      "nbParticipants": 30
+    },
+    {
+      "id": 4,
+      "title": "Ancienne Conference",
+      "description": "Cette conférence est ancienne et ne doit pas être affichée.",
+      "date": "2026-08-15",
+      "place": "Tunis",
+      "maxParticipants": 40,
+      "nbParticipants": 20
+    },
+    {
+      "title": "azertyuiop",
+      "description": "vbn,;:!dfghjk",
+      "date": null,
+      "nbMax": null,
+      "place": null,
+      "id": 5
+    },
+    {
+      "id": 6,
+      "title": "azertyuiopazsedrftgyhujikolp",
+      "description": "xdcfvgbhjkcvbnj,k",
+      "date": "",
+      "maxParticipants": 0,
+      "place": "cdfvgbhnj,k",
+      "nbParticipants": 0
+    },
+    {
+      "id": 7,
+      "title": "testtttddddd",
+      "description": "azertyuiop",
+      "date": "",
+      "maxParticipants": 0,
+      "place": "",
+      "nbParticipants": 0
+    }
   ]
 }
