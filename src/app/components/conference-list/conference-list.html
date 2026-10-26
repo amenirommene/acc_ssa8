@@ -8,7 +8,7 @@
   </div>
       <div class="conference-grid">
       @for (conference of conferences(); track conference.id) {
-      @if (conference.date >= today) {
+      @if(conference.date >= today) {
         <article
           class="conference-item"
           (click)="choisirConference(conference)"

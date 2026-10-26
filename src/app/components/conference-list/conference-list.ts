@@ -24,7 +24,7 @@ choisirConference(c: Conference){
 reserve(conf:Conference){}
 
    today = new Date().toISOString().split('T')[0];
- conferences = toSignal(this.confService.getAllConferences());
+ conferences = toSignal(this.confService.getAllConferences(), { initialValue: [] });
 
 couleurBouton(conference: Conference) {
     if (conference.maxParticipants - conference.nbParticipants > 20) {
